@@ -13,7 +13,7 @@ users = []
 
 io.on('connection', (socket) => {
     users[socket.id] = new User(socket)
-    socket.emit('connected', { name: users[socket.id].name })
+    socket.emit('connected', { name: users[socket.id].name, color: users[socket.id].text_color })
     console.log('user connected')
     // console.log(users)
     socket.on('message', (data) => {
@@ -37,10 +37,3 @@ io.on('connection', (socket) => {
 http.listen(3000, () => {
     console.log('listening on *:3000');
 });
-
-// app.use(cors())
-// app.options('*', cors());
-// app.listen(app.get('port'), function () {
-//     console.log('we are listening on: ',
-//         app.get('port'))
-// });
