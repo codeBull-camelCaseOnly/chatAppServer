@@ -11,7 +11,7 @@ Right now only support chat broadcasting... Will add private rooms later.
 
 ## Installation and Usage
 
-This is a node based app so you will need node and a package manager like ```npm``` or ```node``` installed on your machine.
+This is a node based app so you will need node and a package manager like ```npm``` or ```yarn``` installed on your machine.
 
 Run
 ```
